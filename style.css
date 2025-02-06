@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --darkblue: #00050D;
+    --mainwhite: #ffffff;
+}
+a{
+    text-decoration: none;
+    color:var(--mainwhite);
+    margin: 0 0.3rem 0 0.3rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+    transition: all 0.1s;
+}
+a:hover svg{
+    fill: black;
+}
+button{
+    outline: none;
+    border: none;
+}
+header{
+    background-color: var(--darkblue);
+    display: flex;
+    width:auto;
+    height: 4.4rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem 0 3rem;
+    z-index: 10000;
+}
+.principalH, .principalH2{
+    display: flex;
+    gap: 1.7rem;
+    width:100%;
+    height: 4rem;
+    align-items: center;
+}
+.principalH2{
+    justify-content: end;
+    gap:0;
+}
+.principalH{
+    justify-content: start;
+}
+.principalH img{
+    height: 19px;
+    padding: 0rem 1rem 0 0;
+}
+.principalH a{
+    padding: 1.2rem;
+    border-radius: 4px;
+}
+.principalH2 a{
+    /* height: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+    padding: 1.3rem 0.6rem;
+    transition: all 0.1s;
+    border-radius: 50%;
+    position: relative;
+}
+
+.principalH2 a img{
+    height: 130%;
+}
+.principalH2 .perfil1{
+    height: 100%;
+    padding: 0;
+}
+.principalH2 .perfil1 img{
+   height: 60%;
+}
+.assinaturas{
+    display: flex;
+    justify-content: center;
+}
+.assinaturas:hover svg{
+    fill: black;
+}
+.barra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 1.6rem;
+}
+.barra span{
+    height: 100%;
+    border: 1px solid rgba(250,250,250,50%);
+}
+.principalH a:hover{
+    background-color: rgba(var(--action-background-color,255,255,255), .9);
+    box-shadow: 0 -4px 28px 0 rgba(var(--action-background-color,255,255,255),.2);
+    color: #00050d;
+}
+.principalH2 .perfil1:hover img{
+    outline: 4px solid white;
+    border-radius: 50%;
+    box-shadow: 0 -4px 28px 0 rgba(var(--action-background-color,255,255,255),.2);
+}
+.principalH2 > a:hover{
+    background-color: rgba(var(--action-background-color,255,255,255), .9);
+    box-shadow: 0 -4px 28px 0 rgba(var(--action-background-color,255,255,255),.2);
+    color: #00050d;
+}
+.principalH2 .perfil1:hover{
+    background-color: transparent;
+    box-shadow:none;
+    color: #00050d;
+    padding: 0;
+    border-radius: 0;
+}
+.principalH2 .AMain{
+    border-radius: 5px;
+    padding: 1.3rem 1rem;
+    background-color: #1D98FF;
+    filter:drop-shadow( 0 0 0.5rem rgba(29, 152, 255,0.33));
+    height: 50%;
+}
+.principalH2 .lingua{
+    border-radius: 4px;
+    padding: 1.rem 1rem;
+}
+.principalH2 .lingua:hover{
+    border-radius: 4px;
+}
+/* _______________________Header________________________________ */
+body{
+    background-color: #00050D;
+    color: #ffff;
+   
+}
+body section{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 28px; */
+    height: 42rem;
+    position: relative;
+}
+body section .sobrepor{
+    display: flex;
+    flex-direction: column;
+    background: rgb(0,0,0);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    gap: 2rem;
+    padding: 5rem 0 1rem 3rem;
+
+}
+body section .sobrepor2{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    gap: 2rem;
+    padding: 5rem 0 1rem 3rem;
+
+}
+body section .sobrepor3{
+    display: flex;
+    flex-direction: column;
+    background: rgb(0,0,0);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    gap: 2rem;
+    padding: 5rem 0 1rem 3rem;
+
+}
+body section .sobrepor h1{
+    font-size: 2.8rem;
+}
+body section .sobrepor2 h2, .sobrepor3 h2{
+    font-size: 2.8rem;
+}
+body section .sobrepor h2{
+    font-size: 1.2rem;
+}
+body section .sobrepor2 h3, .sobrepor3 h3{
+    font-size: 1.2rem;
+}
+.ilustra h2{
+    font-size: 2rem;
+    text-align: center;
+}
+.ilustra p{
+    font-size: 1.2rem;
+}
+body section .sobrepor .ourra{
+    align-items: center;
+    display: flex;
+    width:22rem;
+    gap: 1rem;
+}
+body section .sobrepor .ourra span{
+    border-top:  1px solid white;
+    width: 100%;
+}
+body section .sobrepor button{
+    height: 4rem;
+    width: 22rem;
+    border-radius: 8px;
+    font-size:20px;
+    text-align: center;
+    font-weight: bold;
+}
+body section .sobrepor3 button{
+    height: 4rem;
+    width: 22rem;
+    border-radius: 8px;
+    font-size:20px;
+    text-align: center;
+    font-weight: bold;
+}
+body section .sobreee{
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    background: rgb(0,0,0);
+    background: linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    z-index: 2;
+    left: 50%;
+}
+body section .sobreee3{
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    background: rgb(0,0,0);
+    background: linear-gradient(-90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    z-index: 10;
+    right: 50%;
+}
+body section .sobreee1{
+    display: flex;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+body section .backimg{
+    display: flex;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    background-color: #2377ff;
+    background-image: url(Img/BRND_MTH24_PVMagnetLeft_1440x675_POST_Final_pt-BR_GSS00019809.jpg);
+    background-repeat: no-repeat;
+    background-position: right 0px;
+    background-size: 100%;
+}
+body section .backimg2{
+    display: flex;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    background-color: #2377ff;
+    background-image: url(Img/background2.jpg);
+    background-repeat: no-repeat;
+    background-position: right 0px;
+    background-size: 100%;
+    z-index: -10000;
+}
+.linha2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.grid1sb{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1rem;
+    column-gap: 0.5rem; 
+}
+.grid1sb a{
+    height: 12rem;
+    width: 17.33rem;
+    
+}
+
+.grid1sb a img{
+    height: 100%;
+    width: 100%;
+    border-radius: 9px;
+    transition: all 0.4s;
+}
+.grid1sb a img:hover{
+    transform: scale(106%);
+    box-shadow: 0px 1px 6px 4px rgba(255, 255, 255, 0.418);
+}
+.linha4{
+    display: flex;
+    gap: 2rem;
+    margin: 0 3rem;
+}
+.ilustra{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3.33rem;
+    width: 33%;
+    padding: 1rem;
+}
+footer{
+    background: #222222;
+    height: 8.5rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+footer div{
+    display: flex;
+    gap:1rem;
+}
+footer a{
+    color:#79b8f3;
+    transition: all 0.5s;
+}
+footer a:hover{
+    color: #90dffe;
+}
+footer p{
+    color:#8197a4;
+}
+.perfMenu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    padding: 0.7rem 0 0 0.7rem;
+    width: 12.5rem;
+    border-radius: 8px;
+    top: 9%;
+    visibility: hidden;
+    right: 2.77%;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.488);
+    backdrop-filter: blur(16px);
+    background: hsla(215, 19%, 12%, 0.8);
+    z-index: 1000000;
+    align-items: flex-start;
+    gap: 1rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.perfil1:hover~.perfMenu{
+    opacity: 1;
+    visibility: visible;
+}
+.perfMenu:hover{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0s;
+}
+.perfMenu p{
+    margin: 0.5rem 0 1rem 0 ;
+    color: rgb(191, 191, 191);
+    padding: 0 1.3rem;
+    font-size: 0.9rem;
+}
+.perfMenu a{
+    margin: 0;
+    border-radius: 8px;
+    width: 93.88%;
+    justify-content: flex-start;
+    padding:1.2rem 1rem;
+    font-size: 1rem;
+    transition: all 0.4s ease;
+}
+.perfMenu a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0px 0px 20px 4px rgba(255, 255, 255, 0.413);
+}
+
