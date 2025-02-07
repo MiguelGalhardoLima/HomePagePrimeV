@@ -18,8 +18,11 @@ a{
     text-wrap: nowrap;
     transition: all 0.1s;
 }
+.lingua svg{
+    fill: #ffff;
+}
 a:hover svg{
-    fill: black;
+    fill: currentColor;
 }
 button{
     outline: none;
@@ -388,4 +391,65 @@ footer p{
     color: black;
     box-shadow: 0px 0px 20px 4px rgba(255, 255, 255, 0.413);
 }
-
+.linguaMenu{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 15rem;
+    padding: 0.7rem;
+    width: 20rem;
+    border-radius: 8px;
+    top: 9%;
+    visibility: hidden;
+    right: 2.77%;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.488);
+    backdrop-filter: blur(16px);
+    background: hsla(215, 19%, 12%, 0.8);
+    z-index: 1000000;
+    align-items: flex-start;
+    gap: 1rem;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.linguaMenu:hover{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0s;
+}
+.linguaMenu ul{
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 1.1rem;
+    height: 100%;
+    width: 100%;
+}
+.linguaMenu li a{
+    border-radius: 8px;
+    padding: 1rem;
+}
+.linguaMenu li{
+    list-style-type: none;
+}
+.linguaMenu li:hover a{
+    background-color: white;
+    box-shadow: 1px 1px 20px rgba(255, 255, 255, 0.45);
+    color: black;
+}
+.linguacontainer:hover .linguaMenu {
+    visibility: visible;
+    opacity: 1;
+  }
+.linguacontainer:hover .lingua {
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 -4px 28px 0 rgba(255, 255, 255, 0.2);
+    color: #00050d;
+  }
+.lingua svg{
+    transition: all 0.3s ease;
+} 
+.linguacontainer:hover .lingua svg {
+    fill: black;
+    rotate: 180deg;
+  }
